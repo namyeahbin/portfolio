@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*===== pc =====*/
+/*===== header =====*/
+.container header p { font-size: 15px; }
+.container header .top { height: 70px; justify-content: space-between; }
+.container header .top .gnb { display: flex; position: static; width: auto; height: auto; background-color: transparent; }
+.container header .top .gnb li { margin: 0 0 0 40px; }
+.container header .top #m_search { display: none; }
+.container header .top #toggle_menu { display: none; }
+.container header .top .info { display: block; display: flex; }
+.container header .top .info { position: relative; }
+.container header .top .info li { margin-right: 50px; }
+.container header .top .info #search { position: absolute; right: 340px; }
+.container header .data_search { top: 40px; }
+
+/*===== main =====*/
+/* thumnail 1 */
+.container main .swiper .swiper-slide { height: 900px; }
+.container main .swiper .swiper-slide.bg1 { background-image: url(../images/pic1_p.jpg); }
+.container main .swiper .swiper-slide.bg1 h2 { text-indent: 0; }
+.container main .swiper .swiper-slide.bg2 { background-image: url(../images/pic2_p.png); }
+.container main .swiper .swiper-slide.bg3 { background-image: url(../images/pic3_p.png); }
+
+.container main .swiper .swiper-button-next, .container main .swiper .swiper-button-prev { display: block; }
+
+/* promotion */
+.container main .product { height:1400px; }
+.container main .product h2 { font-size: 55px; }
+.container main .product .swiper .swiper-wrapper .pd1, .container main .product .swiper .swiper-wrapper .pd2, .container main .product .swiper .swiper-wrapper .pd3 ,.container main .product .swiper .swiper-wrapper .pd7, .container main .product .swiper .swiper-wrapper .pd8, .container main .product .swiper .swiper-wrapper .pd9, .container main .product .swiper .swiper-wrapper .pd13, .container main .product .swiper .swiper-wrapper .pd14, .container main .product .swiper .swiper-wrapper .pd15 { height: 500px; }
+
+.container main .product .swiper .swiper-scrollbar { left: 7.5%; bottom: 150px; width: 85%; }
+
+/* thumnail2 */
+.container main .pic2 video { height: 750px; }
+
+/* thumnail 3 */
+.container main .pic3 { background: url(../images/pic3_p.jpg) no-repeat 50% / cover; height: 750px;}
+.container main .pic3 h2 { font-size: 60px; text-align: left; padding-left: 50px; padding-top: 350px; padding-bottom: 0; margin-bottom: 200px; }
+.container main .pic3 .btn:hover { background-color: #000; color: #fff; }
+
+/* thumnail 4 */
+.container main .pic4 { background: url(../images/pic4_p.jpg) no-repeat 50% / cover; height: 750px; }
+.container main .pic4 h2 { font-size: 75px; }
+.container main .pic4 .txt { display: inline-block; }
+
+.container main .pic5 { height: 750px; }
+
+/* brand story */
+.container main .brand_story { margin-top: 100px; margin-bottom: 150px; }
+.container main .brand_story h2 { font-size: 45px; }
+.container main .brand_story .btn:hover { background-color: #000; color: #fff; }
+
+/*===== footer =====*/
+.container footer { height: 700px; }
+.container footer .outtro { font-size: 15px; display: block; }
+.container footer .outtro h3 { padding-top: 20px; }
+.container footer .bottom_menu { display: flex; justify-content: space-evenly;padding-top: 100px; }
+.container footer .bottom_menu h3 { padding-bottom: 10px; }
+.container footer .bottom_menu li { padding: 5px; }
+.container footer .bottom_menu section { border-bottom: none}
+.container footer .bottom_menu section h3 { font-weight: 400; }
+.container footer .bottom_menu .adress { display: block; color: #5E5E5E; }
+.container footer .bottom_menu .cs #kakao, .container footer .bottom_menu .cs #number { color: #fff; }
+.container footer .bottom_menu .cs .cs_list, .container footer .bottom_menu .pd .pd_list, .container footer .bottom_menu .cm .cm_list { display: block; color: #5E5E5E; }
+.container footer .bottom_menu .plus_menu { display: none; }
+.container footer .pf { display: flex; justify-content: space-evenly; padding: 100px 20px;}
+.container footer .pf .btn { width: 300px; height: 100px; font-size: 25px; line-height: 100px; padding: 10px 40px; }
+.container footer .pf .btn:hover { background-color: #fff; color: #000; }
+.container footer .pf p { text-align: left; font-size: 15px; margin: 30px 20px; }
+

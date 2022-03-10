@@ -1,0 +1,23 @@
+[
+	{
+		"tags" : "베어 핏라스팅 쿠션",
+		"description" : "베이스",
+		"colors" : "4color",
+		"price" : "25,200",
+		"url" : "images/img1.jpg"
+	},
+	{
+		"tags" : "베어 핏라스팅 쿠션 리필",
+		"description" : "베이스",
+		"colors" : "4color",
+		"price" : "10,500",
+		"url" : "images/img2.jpg"
+	},
+	{
+		"tags" : "베어 글리터 팔레트 01 누디",
+		"description" : "아이섀도우",
+		"colors" : "3color",
+		"price" : "14,000",
+		"url" : "images/img3.jpg"
+	}
+]
