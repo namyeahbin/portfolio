@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Yeah Bin Portfolio</title>
+	<meta name="title" content="Yeah Bin NAM Portfolio">
+	<meta name="description" content="신입 웹퍼블리셔 남예빈의 포트폴리오입니다.">
+  <meta name="keywords" content="남예빈, 웹 퍼블리셔, 웹 디자이너, UI 디자이너, UX 디자이너, 신입 웹 퍼블리셔 포트폴리오, 웹 퍼블리셔 포트폴리오, 포트폴리오, Portfolio, Web Publisher, Web Designer, UI Designer, UX Designer, Web Publisher Portfolio">
+	<!-- og -->
+	<meta property="og:title" content="Yeah Bin NAM Portfolio">
+	<meta property="og:description" content="I'm absolutely fully capable.">
+	<meta property="og:url" content="https://namyeahbin.github.io/portfolio/index.html">
+	<meta property="og:image" content="">
+
+	<!-- fabvicon -->
+	<!-- 32 / 180 / 192 / 512 -->
+	<link rel="icon" href="common/images/favicon.ico" sizes="any">
+	<link rel="icon" href="common/images/favicon.svg" type="image/svg+xml">
+	<!-- 180 x 180 -->
+	<link rel="apple-touch-icon" href="common/images/apple-touch-icon.png">
+	<!-- 192 / 512 -->
+	<link rel="manifest" href="common/js/manifest.json">
+
+	<!-- fonts -->
+	<link rel="stylesheet" href="common/css/fonts.css">
+	<!-- font-family: ivypresto-display, serif; / font-family: basic-sans, sans-serif; -->
+	<link rel="stylesheet" href="https://use.typekit.net/fmo2fow.css">
+
+	<!-- 평준화 -->
+	<link rel="stylesheet" href="common/css/normalize.css">
+	<!-- Swiper css -->
+	<link rel="stylesheet" href="common/css/swiper-bundle.min.css">
+	<!-- style -->
+	<link rel="stylesheet" href="common/css/menu.css">
+	<link rel="stylesheet" href="index.css">
+
+	<!-- 흘러가는 배너 js -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/zepto@1.2.0/dist/zepto.js,npm/zepto@1.2.0/src/fx.js?ver=5.3.2"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	
+	<script src="common/script/jquery-3.6.0.min.js"></script>
+	<script src="common/script/prefixfee.min.js"></script>
+	<script src="common/script/swiper-bundle.min.js"></script>
+	<!-- 내가 작성한 js -->
+	<script defer src="common/script/script.js"></script>
+</head>
+<body style="overflow-x: hidden; overflow-y: auto;">
+	<div class="inform">
+		<img src="common/images/warning.png" alt="주의">
+	</div>
+	<div class="container">
+		<!-- header -->
+		<header>
+			<nav id="menu">
+				<ul class="top">
+					<li class="icon_bars icon_btn">
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</li>
+					<li class="logo" onclick="location.href='index.html'">logo<li>
+					<li class="contact">
+						<a href="https://mail.google.com/mail/u/0/?fs=1&to=namyeahbin@gmail.com&tf=cm" target="_blank">CONTACT
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="fullscreen">
+				<ul id="gnb">
+					<li><a href="index.html">Main</a></li>
+					<li><a href="#go_work">Work</a></li>
+					<li><a href="https://www.behance.net/b915b87f" target="_blank">Behance</a></li>
+					<li><a href="https://brunch.co.kr/@ef215e3f365042f" target="_blank">Brunch</a></li>
+					<li><a href="https://github.com/namyeahbin" target="_blank">Github</a></li>
+				</ul>	
+			</div>			
+		</header>
+
+		<!-- main -->
+		<main>
+			<section class="me">
+				<h2 class="primary">
+					<span class="main">I'm Nam Yeah Bin</span>
+					<span class="br sub">UX & UI design</span>
+					<span class="br sub">Publishing</span>
+				</h2>
+				<p id="scroll">scroll</p>
+			</section>
+
+			<section class="aboutme">
+				<h3 class="typing-txt">
+					<span class="txt-wrapper">
+						<span class="letter">&num;도전 &num;겸손 &num;책임</span>
+					</span>
+				</h3>
+				<p class="introduce">
+					어떤 일을 하던지 항상 겸손한 자세로 책임감 있게 행동하며<span class="br">목표를 설정해두고 하고자 하는 일을 진행합니다.</span>
+				</p>
+				<p class="introduce">	
+					<span class="br">설정한 목표를 이루기 위해 열정 있게 노력하고<span class="br">부족한 부분은 인정하고 채워나가는 퍼블리셔로 나아가겠습니다.
+				</p>
+			</section>
+
+			<!-- 기술 역량 -->
+			<div class="skill">
+				<h2>Skill</h2>
+				<div class="swiper mySwiper" id="my_style">
+					<section class="swiper-wrapper">
+						<div class="swiper-slide">
+							<h3>HTML5 & CSS3</h3>
+							<ul class="side1">
+								<li>웹사이트 구축 및 디자인</li>
+								<li>미디어 쿼리 이용 반응형 웹 제작</li>
+								<li>웹 표준 & 웹 접근성에 준수하는 시맨틱 마크업</li>
+								<li>CSS animation 활용한 동적인 모션</li>
+								<li>flex, grid 사용</li>
+								<li>nomarlize.css 적용</li>
+								<li>OpenGraph 적용</li>
+							</ul>
+						</div>
+						<div class="swiper-slide">
+							<h3>Javascript(ES6+)</h3>
+							<ul class="side2">
+								<li>기본 문법 이해 및 동적 구현</li>
+								<li>jQuery 라이브러리를 이용한 DOM, animation 사용</li>
+								<li>다양한 OpenAPI 사용 가능</li>
+								<li>Ajax로 필요한 json 데이터 받아 구현 가능</li>
+								<li>React를 위한 ES6+ 계속 공부 중</li>
+							</ul>
+						</div>
+						<div class="swiper-slide">	
+						<h3>Photoshop & Illustrator<span class="br">XD & Jeplin</span></h3>
+							<ul class="side3">
+								<li>이미지 편집 및 디자인</li>
+								<li>이벤트 및 프로모션 등 마케팅 콘텐츠 제작</li>
+								<li>UI & UX를 고려한 디자인 가능</li>
+								<li>앱 스플래시 디자인</li>
+								<li>프로토타입 제작</li>
+							</ul>
+						</div>
+					  <div class="swiper-slide">			
+							<h3>Git & Github</h3>
+							<ul class="side4">
+								<li>git bash 혹은 VScode 사용하여 버전 관리</li>
+								<li>github, netlify 이용하여 웹페이지 배포</li>
+								<li>프로젝트 버전 관리</li>
+							</ul>
+						</div>			
+					</section>
+					<div class="swiper-button-next" id="next_icon"></div>
+					<div class="swiper-button-prev" id="prev_icon"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+
+			<!-- 프로젝트 -->
+			<div class="project" id="go_work">
+				<h2>Work</h2>
+				<div class="project_list fade-left">
+					<p class="work">
+						<span class="br">RESPONSIVE WEB</span>
+						<span class="spacing">forencos</span>
+						<span class="br">programing</span>
+						<span class="spacing">CSS3 / java script</span>
+						<span class="br">tool</span>
+						<span class="spacing">xd / illustrator / photoshop</span>
+						<span class="br">design keywords</span>
+						<span class="spacing">&num;Colorful &num;Dynamic &num;Flexible</span>
+						<span class="br">role</span>개인 작업(100%)
+					</p>
+					<div class="video_wrap">
+						<a href="forencos/pj_forencos.html">
+							<video src="common/video/forencos_m.mov" loop muted preload class="pj1"></video>
+						</a>	
+					</div>
+				</div>
+				<div class="project_list fade-right">
+					<div class="video_wrap">
+						<a href="app_recycle/pj_recycleApp.html">
+							<!-- <img src="common/images/work2-2.png" alt="" class="pj2"> -->
+							<video src="common/video/app_video.mov" loop muted preload class="pj2"></video>
+						</a>
+					</div>
+					<p class="work">
+						<span class="br">application</span>
+						<span class="spacing">내손안의 분리배출</span>
+						<span class="br">tool</span>
+						<span class="spacing">xd / illustrator</span>
+						<span class="br">design keywords</span>
+						<span class="spacing">&num;Bright &num;positive &num;Simple</span>
+						<span class="br">role</span>팀 작업(100%)
+					</p>
+				</div>
+				<div class="project_list fade-left">
+					<p class="work">
+						<span class="br">web</span>
+						<span class="spacing">blue orange</span>
+						<span class="br">programing</span>
+						<span class="spacing">CSS3 / java script / jQuery</span>
+						<span class="br">tool</span>
+						<span class="spacing">photoshop</span>
+						<span class="br">design keywords</span>
+						<span class="spacing">&num;Concise &num;Easy &num;Trustful</span>
+						<span class="br">role</span>개인 작업(100%)
+					</p>
+					<div class="video_wrap">
+						<a href="blueorange/pj_blueorange.html">
+							<video src="common/video/blueorange_video.mov" loop muted preload class="pj1"></video>
+						</a>
+					</div>
+				</div>	
+			</div>
+			
+			<!-- banner -->
+			<div class="banner">
+				<div class="banner1">
+					<span>Git - Github - HTML5 - CSS3 - Javascript(ES6+) - jQuery - </span>
+				</div>
+				<div class="banner2"></div>
+				<div class="banner3">
+					<span>Photoshop - Illustrator - XD - Jeplin - </span>
+				</div>
+			</div>
+
+			<section class="connect">
+				<h3>Let's connect !</h3>
+				<p>
+				저와 함께하고 싶으시다면<span class="br">언제든지 연락주세요 !</span>
+				</p>
+			</section>
+		</main>      
+
+		<!-- footer -->
+		<footer>
+			<div class="bottom">
+				<table>
+					<tr>
+						<th rowspan="3" class="btn" onClick="window.open('https://mail.google.com/mail/u/0/?fs=1&to=namyeahbin@gmail.com&tf=cm')">namyeahbin@gmail.com</th>
+						<td class="btn" onClick="window.open('https://www.behance.net/b915b87f')">Behance</td>
+					</tr>
+					<tr>
+						<td class="btn" onClick="window.open('https://brunch.co.kr/@ef215e3f365042f')">Brunch</td>
+					</tr>
+					<tr>
+						<td id="line2" class="btn" onClick="window.open('https://github.com/namyeahbin')">Github</td>
+					</tr>
+				</table>
+			</div>
+			<p>COPYRIGHT© NAM YEAH BIN 2022 ALL RIGHT RESERVED.</p>
+			<div class="box">
+				<a href="#" id="go_top">
+					<span class="arrow"></span>
+				</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
