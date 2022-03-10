@@ -1,0 +1,171 @@
+@charset "utf-8";
+/*===== pc =====*/
+@media screen and (min-width:1280px) {
+  /* 로고 */
+  .container header .top .logo { 
+    background: url(common/images/logo.png) no-repeat 50% / cover; width: 50px; height: 50px; text-indent: -9999px; cursor: pointer;
+  }
+  /***** main *****/
+  /*** thumnail ***/
+  .container main h2 { font-family: ivypresto-display,sans-serif; }
+  .container main .me { height: 500px; }
+  .container main .me .primary { 
+    font-size: 150px; letter-spacing: 3px; font-weight: 300; padding-top: 50px; padding: 100px 0; 
+    width: 100%; 
+    backface-visibility: hidden;
+  }
+  .container main .me .main {
+    display: block;
+    animation: moveFromLeft 2s ease-in-out;
+  }
+  .container main .me .sub {
+    display: block;
+    animation: moveFromRight 2s ease-in-out;
+  }
+  @keyframes moveFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-6.25rem);
+    }
+    80% {
+      transform: translateX(0.625rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  @keyframes moveFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(6.25rem);
+    }
+    80% {
+      transform: translateX(-.0.625rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  @keyframes ani {
+    0% {
+      width: 1px;
+      height: 1px;
+    }
+    50% {  
+      width: 2px;
+      height: 8px;
+    }
+    100% {
+      width: 2px;
+      height: 50px;
+    }
+  }
+  .container main .me #scroll { text-indent: -9999px; background-color: #FFF5F0; margin: 0 auto; animation: ani 1.5s infinite linear running; }
+
+  /*** 소개 ***/
+  .container main .aboutme { text-align: left; width: 1300px; margin: 650px auto 500px; }
+  .container main .aboutme .typing-txt { position: relative; }
+  .container main .aboutme .txt-wrapper { 
+    display: inline-block; position: relative; padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em; overflow: hidden; 
+  }
+  .container main .aboutme .typing-txt .txt-wrapper .letter { display: inline-block; font-weight: 400; font-size: 48px; margin-bottom: 90px; transform-origin: 0 0; }
+  .container main .aboutme .introduce { font-size: 38px; padding-left: 280px; line-height: 1.3; }
+
+  /*** skill & work ***/
+  .container main .skill h2, .container main .project h2 { font-size: 60px; text-align: left; margin: 50px 200px; }
+
+  /*** skill ***/
+  .container main .skill { position: relative; }
+  .container main .skill .swiper { border-top: 1px solid #FFF5F0;
+    border-bottom: 1px solid #FFF5F0; display: flex; width: 77%; margin: 0 auto; padding: 30px 0;  }
+  .container main .skill .swiper .swiper-wrapper .swiper-slide { display: flex; flex-direction: column; justify-content: center; align-items: center;  }
+  .container main .skill .swiper .swiper-wrapper .swiper-slide h3 { font-family: ivypresto-display,sans-serif; letter-spacing: 2px; font-size: 50px; text-align: center; }
+  .container main .skill .swiper .swiper-wrapper .swiper-slide li { list-style-type: disc; line-height: 2; font-size: 27px; text-align: left; list-style-position: outside; }
+  .container main .skill .swiper .swiper-wrapper .swiper-slide .side1 { margin-left: 180px; }
+  .container main .skill .swiper .swiper-wrapper .swiper-slide .side2 { margin-left: 210px; }
+  .container main .skill .swiper .swiper-wrapper .swiper-slide .side3 { margin-left: -60px; }
+  .container main .skill .swiper .swiper-wrapper .swiper-slide .side4 { margin-left: 210px; }
+
+  /* 페이지네이션 내비게이션 스타일 */
+  .container main .skill #my_style {
+    --swiper-navigation-color: #fff; position: relative;
+  }
+  .container main .skill #my_style .swiper-pagination-fraction { 
+    font-family: ivypresto-display,sans-serif; font-style: italic; font-size: 50px; letter-spacing: 10px; width: 200px; height: 200px; line-height: 180px; border: 1px solid #FFF5F0; border-radius: 50%; position: absolute; top: 35%;
+    margin-left: 50px;
+  }
+  .container main .skill #my_style .swiper-pagination-current { font-size: 100px; }
+  .container main .skill #my_style .swiper-button-next, .container main .skill #my_style .swiper-button-prev { font-family: none; text-indent: -9999px; background: no-repeat 50% / cover; width: 180px; height: 30px; position: absolute; top: 10%;  }
+  .container main .skill #my_style .swiper-button-next { background-image: url(common/images/icon3.svg);  }
+  .container main .skill #my_style .swiper-button-prev { background-image: url(common/images/icon2.svg);  }
+
+  /*** work ***/
+  .container main .project { margin: 500px 0; }
+  .container main .project .project_list { display: flex; position: relative; width: 77%; margin: 0 auto; margin-bottom: 250px; }
+  .container main .project .project_list .work { text-align: left; padding: 30px 20px;  font-size: 28px; text-transform: uppercase; font-family: 'ivypresto-display',sans-serif; width: 700px; height: 550px; border-top: 1px solid #FFF5F0; border-bottom: 1px solid #FFF5F0; }
+  .container main .project .project_list .br { font-family: 'basic-sans',sans-serif; font-size: 18px; padding: 10px 0; }
+  .container main .project .project_list .spacing { display: inline-block; padding-bottom: 40px; }
+  .container main .project .project_list .video_wrap { transition: 0.6s; filter: grayscale(100%); cursor: pointer; margin: 60px auto; }
+  .container main .project .project_list .video_wrap video { object-fit: cover; width: 550px; height: 550px; border-radius: 10px 10px 10px 10px; }
+  .container main .project .project_list .video_wrap .pj1 { margin-left: 60px; }
+  .container main .project .project_list .video_wrap .pj2 { margin-right: 60px; }
+  .container main .project .project_list .video_wrap:hover { filter: none; transform: scale(1.1); }
+
+
+
+  /*** banner ***/
+  .container main .banner { overflow: hidden; white-space: nowrap; font-size: 70px; font-family: 'ivypresto-display',sans-serif; font-style: italic; font-weight: 300; letter-spacing: 2px; margin-bottom: 500px; border-top: 1px solid #FFF5F0; border-bottom: 1px solid #FFF5F0; }
+  .container main .banner .banner1, .container main .banner .banner3 { padding: 20px; }
+  .container main .banner .banner2 { border-top: 1px solid #FFF5F0; }
+
+  /*** connect ***/
+  .container main .connect { margin-bottom: 130px; }
+  .container main .connect h3 { font-size: 80px; font-family: ivypresto-display,sans-serif; letter-spacing: 5px; font-weight: 300; }
+  .container main .connect p { font-size: 40px; }
+
+  /***** footer *****/
+  .container footer { position: relative; }
+  .container footer .bottom { border-top: 1px solid #FFF5F0; border-bottom: 1px solid #FFF5F0; }
+  .container footer .bottom table { font-size: 25px; letter-spacing: 2px; width: 100%; height: 550px; }
+  .container footer .bottom table th { border-right: 1px solid #FFF5F0; font-family: ivypresto-display,sans-serif; font-size: 30px;  }
+  .container footer .bottom table td { border-bottom: 1px solid #FFF5F0; padding: 110px; }
+  .container footer .bottom table #line2 { border-bottom: none; }
+  .container footer .bottom table .btn { transition: 0.5s; cursor: pointer; }
+  .container footer .bottom table .btn:hover  { color: #000; background-color: #FFF5F0; }
+
+  .container footer .box a { display: block; width: 80px; height: 80px; border: 2px solid #fff; border-radius: 50%; position: absolute; bottom: 50px; right: 30px; transition: all 3s; overflow: hidden; }
+  .container footer .box a:before { 
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+    background-color: #FFF5F0;
+    top: 45px; left: 50%;
+    transform: translate(-50%);
+    animation: wave 8s infinite linear;
+    transition: all 1s;
+  }
+  .container footer .box:hover:before { position: relative; }
+  @keyframes wave {
+    0% { transform: translate(-50%) rotate(-180deg); }
+    100% { transform: translate(-50%) rotate(360deg); } 
+  } 
+  /* 화살표 아이콘 */
+  .container footer .box .arrow { position: absolute; top:44%; left: 23px; }
+  .container footer .box .arrow::after { 
+    content: '';
+    display: inline-block;
+    width: 1rem; height: 1rem;
+    margin-left: 0.5rem;
+    border-top: 0.3rem solid #999;
+    border-right: 0.3rem solid #999;
+    transform: rotate(315deg);
+    border-radius: 3px 3px 3px 3px;
+  }
+}
