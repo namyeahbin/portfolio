@@ -1,0 +1,84 @@
+@charset "utf-8";
+/*===== pc =====*/
+@media screen and (min-width:1280px) {
+	/* 로고 */
+  .container header .top .logo { 
+    background: url(../../common/images/logo.png) no-repeat 50% / cover; width: 50px; height: 50px; text-indent: -9999px; cursor: pointer;
+  }
+	/***** main  *****/
+	/* 메인 썸네일 */
+	.container main { width: 1200px; margin: 0 auto; position: relative; }
+	.container main .main_screen { height: 600px; background-color: #007AFF; color: #fff; margin: 200px 0 180px; }
+	.container main .main_screen h2 { font-family: ivypresto-display,sans-serif; font-size: 5.5rem; letter-spacing: 3px; padding-top: 10px; }
+	.container main .main_screen .video_wrap video { height: 560px; }
+
+	/* 타이틀 */
+	.container main .title { text-align: left; position: relative; }
+	.container main .title h3 { font-family: ivypresto-display,sans-serif; letter-spacing: 2px; }
+	.container main .title .change { font-family: basic-sans,sans-serif; font-size: 1.5rem; }
+	.container main .title .import { font-size: 3.5rem; }
+
+	/* 퍼블리싱 가이드라인 */
+	.container main .title .publishing_guide { position: absolute; bottom: 0;  right: 0; border: 1px solid #FFF5F0; padding: 20px 45px; font-size: 25px; cursor: pointer; }
+	.container main .title .publishing_guide:hover { color: #000; background-color: #FFF5F0; transition: 0.5s; }
+	.container main .guide_line { position: absolute; background-color: #FFF5F0; color: #000; width: 100%; visibility: hidden;  }
+	.container main .guide_line.on { position: absolute; transition: 0.5s; visibility: inherit; }
+	.container main .guide_line .guide {  display: flex; flex-direction: column wrap;  text-align: left; padding-left: 20px; transition: 0.3s; }
+	.container main .guide_line .guide h4 { font-size: 30px; width: 300px; }
+	.container main .guide_line .guide p { font-size: 25px; line-height: 1.3; }
+
+	/* 프로젝트 설명 */
+	.container main .pj_desc { text-align: left; }
+	.container main .pj_desc h3 { font-family: basic-sans,sans-serif; font-size: 2rem; text-transform: uppercase; padding-right: 20px; }
+	.container main .pj_desc .desc { display: flex; flex-direction: column wrap; font-size: 36px; line-height: 1.4; border-top: 1px solid #FFF5F0; padding: 40px 10px; }
+	/* goal */
+	.container main .pj_desc .goal h3 { padding-right: 190px; }
+	/* publishing */
+	.container main .pj_desc .puble h3 { padding-right: 100px; }
+	.container main .pj_desc .puble .pb_box #space { padding-bottom: 50px; }
+	/* problem & solution */
+	.container main .pj_desc .ps h3 { padding-right: 120px; }
+	.container main .pj_desc .ps .ps_box .txt, .container main .pj_desc .design_box .txt, .container main .pj_desc .rv_box .txt { padding-bottom: 100px; }
+	.container main .pj_desc .ps .ps_box .txt h4, .container main .pj_desc .design_box .txt h4, .container main .pj_desc .rv_box .txt h4 { margin-bottom: 10px; font-style: italic; font-size: 38px; }
+	/* design */
+	.container main .pj_desc .design h3 { padding-right: 160px; }
+	.container main .pj_desc .design_box .txt .design_keywords { font-size: 40px; display: flex; }
+	.container main .pj_desc .design_box .txt .design_keywords .keyword { width: 270px; height: 270px; background-color: #007AFF; border-radius: 50%; margin-right: 30px; text-align: center; display: flex; flex-direction: column; justify-content: center; }
+	.container main .pj_desc .design_box .txt .color { display: inline-block; padding: 20px 60px; }
+	.container main .pj_desc .design_box .txt .box1 {  background-color: #fff; color: #000; }
+	.container main .pj_desc .design_box .txt .box2 { background-color: #e4e4e4; color: #000; }
+	.container main .pj_desc .design_box .txt .box3 { background-color: #007AFF; }
+	.container main .pj_desc .design_box .txt .design_fonts { font-size: 48px; }
+	.container main .pj_desc .design_box .txt .design_fonts .noto { font-family: 'NotoSans KR'; }
+	.container main .pj_desc .design_box .txt .design_fonts .medium { font-weight: 500; }
+	.container main .pj_desc .design_box .txt .design_fonts .bold { font-weight: 700; }
+	.container main .pj_desc .design_box .txt .design_fonts .kumbh { font-family: 'Kumbh Sans'; }
+	/* review */
+	.container main .pj_desc .review h3 { padding-right: 148px; }
+
+	.container main .go_site { position: relative; }
+	.container main .go_site a { 
+		display: block;
+		border: 1px solid #FFF5F0; border-radius: 4px; 
+		margin: 100px auto 100px; text-align: center; 
+		line-height: 100px; font-size: 38px;
+		z-index: 1;
+	} 
+	.container main .go_site a:after {
+		position: absolute;
+  	content: "";
+  	width: 0;
+  	height: 100%;
+  	top: 0;
+  	right: 0;
+  	z-index: -1;
+  	background-color: #FFF5F0;
+		border-radius: 4px; 
+		transition: all 0.3s ease;
+	}
+	.container main .go_site a:hover { color: #000; }
+	.container main .go_site a:hover:after {
+		left: 0; width: 100%;
+	}
+	.container main .go_site a:active { top: 2px; }
+} 
