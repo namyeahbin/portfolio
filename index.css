@@ -88,7 +88,7 @@
   .container main .skill .swiper .swiper-wrapper .swiper-slide li { list-style-type: disc; line-height: 2; font-size: 27px; text-align: left; list-style-position: outside; }
   .container main .skill .swiper .swiper-wrapper .swiper-slide .side1 { margin-left: 180px; }
   .container main .skill .swiper .swiper-wrapper .swiper-slide .side2 { margin-left: 210px; }
-  .container main .skill .swiper .swiper-wrapper .swiper-slide .side3 { margin-left: -60px; }
+  .container main .skill .swiper .swiper-wrapper .swiper-slide .side3 { margin-left: 200px; }
   .container main .skill .swiper .swiper-wrapper .swiper-slide .side4 { margin-left: 210px; }
 
   /* 페이지네이션 내비게이션 스타일 */
@@ -105,7 +105,31 @@
   .container main .skill #my_style .swiper-button-prev { background-image: url(common/images/icon2.svg);  }
 
   /*** work ***/
-  .container main .project { margin: 500px 0; }
+  .container main .project { margin: 500px 0; position: relative; }
+  /* 퍼블리싱 가이드 */
+	.container main .project .open_btn { position: absolute; top: 0; right: 0; font-size: 30px; cursor: pointer; }
+  .container main .project .open_btn .arrow_right {
+    position: absolute; display: inline-block;
+    width: 0; height: 0;
+    border-top: 15px solid #FFF5F0;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    margin-top: 8px; margin-left: 9px;
+    animation: horizontal 0.7s ease-in-out infinite;
+  }
+  @keyframes horizontal {
+    0% { margin-top: 15px; }
+    50% { margin-top: 11px; }
+    100% { margin-top: 15px; }
+  }
+  .container main .project .guide_line { position: fixed; top: 0; width: 80%; height: 100%; margin: 0 200px; background-color: #FFF5F0; color: #000; z-index: 9999; overflow: auto; cursor: pointer; }
+  .container main .project .guide_line.hidden { display: none; }
+  .container main .project .guide_line .guide { display: flex; text-align: left; padding: 0 100px; }
+  .container main .project .guide_line .guide h4 { width: 300px; font-size: 25px;}
+  .container main .project .guide_line .guide p { font-size: 20px; line-height: 1.5; }
+  .container main .project .guide_line .close_btn { font-weight: bold; font-size: 25px; padding: 20px; cursor: pointer; }
+
   .container main .project .project_list { display: flex; position: relative; width: 77%; margin: 0 auto; margin-bottom: 250px; }
   .container main .project .project_list .work { text-align: left; padding: 30px 20px;  font-size: 28px; text-transform: uppercase; font-family: 'ivypresto-display',sans-serif; width: 700px; height: 550px; border-top: 1px solid #FFF5F0; border-bottom: 1px solid #FFF5F0; }
   .container main .project .project_list .br { font-family: 'basic-sans',sans-serif; font-size: 18px; padding: 10px 0; }

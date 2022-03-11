@@ -55,8 +55,12 @@
 			<nav id="menu">
 				<ul class="top">
 					<li class="icon_bars icon_btn">
-						<div class="bar"></div>
-						<div class="bar"></div>
+						<ul>
+							<li class="bar"></li>
+							<li class="bar"></li>
+							<li class="bar"></li>
+							<li class="bar"></li>
+						</ul>
 					</li>
 					<li class="logo" onclick="location.href='index.html'">logo<li>
 					<li class="contact">
@@ -124,7 +128,7 @@
 								<li>기본 문법 이해 및 동적 구현</li>
 								<li>jQuery 라이브러리를 이용한 DOM, animation 사용</li>
 								<li>다양한 OpenAPI 사용 가능</li>
-								<li>Ajax로 필요한 json 데이터 받아 구현 가능</li>
+								<li>Ajax로 필요한 JSON 데이터 받아 구현 가능</li>
 								<li>React를 위한 ES6+ 계속 공부 중</li>
 							</ul>
 						</div>
@@ -156,6 +160,85 @@
 			<!-- 프로젝트 -->
 			<div class="project" id="go_work">
 				<h2>Work</h2>
+				<h2 class="open_btn">
+					Publishing Guide<span class="arrow_right"></span>
+				</h2>
+				<!-- 퍼블리싱 가이드 -->
+				<div class="guide_line hidden">
+					<div class="guide list1">
+						<h4>Open Graph</h4>
+						<div class="open_graph name">
+							<p>
+								<span class="br">&sdot;오픈그래프 적용</span>
+							</p>
+						</div>
+					</div>
+	
+					<div class="guide list2">
+						<h4>Favicon</h4>
+						<div class="favicon name">
+							<p>
+								<span class="br">&sdot;5개의 이미지와 1개의 JSON 파일로 파비콘 최적화</span>
+								<span class="br">&sdot;32x32 예전 브라우저</span>
+								<span class="br">&sdot;svg 최신 브라우저 / 다크모드 지원</span>
+								<span class="br">&sdot;apple-touch-icon 180x180 애플기기</span>
+								<span class="br">&sdot;192x192 홈스크린</span>
+								<span class="br">&sdot;manifest(JSON) PWA 및 안드로이드 기기</span>
+								<span class="br">&sdot;512x512 PWA 로딩시 스플래시 스크린용</span>
+							</p>
+						</div>
+					</div>
+	
+					<div class="guide list3">
+						<h4>HTML5</h4>
+						<div class="html name">
+							<p>
+								<span class="br">&sdot;validator 검사</span>
+								<span class="br">&sdot;W3C기준</span>
+								<span class="br">&sdot;meta[name:viewport]설정</span>
+								<span class="br">&sdot;header / main / footer를 이용하여 영역 분리</span>
+								<span class="br">&sdot;img태그 사용시 alt값 필수 작성</span>
+								<span class="br">&sdot;a태그 사용시 빈 링크는 &num;으로 통일</span>
+							</p>
+						</div>
+					</div>
+	
+					<div class="guide list4">
+						<h4>CSS3</h4>
+						<div class="css name">
+							<p>
+								<span class="br">&sdot;validator 검사</span>
+								<span class="br">&sdot;첫줄에 인코딩 선언 @charset "UTF-8";</span>
+								<span class="br">&sdot;주석을 이용하여 영역별 css 구분</span>
+								<span class="br">&sdot;모든 속성 선언 끝에 세미콜론; 작성</span>
+							</p>
+						</div>
+					</div>
+	
+					<div class="guide list5">
+						<h4>파일명</h4>
+						<div class="file name">
+							<p>
+								<span class="br">&sdot;웹페이지는 첫 페이지는 index.html로 통일</span>
+								<span class="br">&sdot;알파벳, 숫자, 언더바_ 조합하여 파일명 설정</span>
+							</p>
+						</div>
+					</div>
+	
+					<div class="guide list6">
+						<h4>폴더 구조</h4>
+						<div class="folder name">
+							<p>
+								<span class="br">&sdot;css 공통으로 연결된 font.css와 menu.css가 담겨있는 폴더</span>
+								<span class="br">&sdot;fonts 웹폰트를 제외한 폰트 파일이 담겨있는 폴더</span>
+								<span class="br">&sdot;images 공통으로 연결된 이미지가 담겨있는 폴더</span>
+								<span class="br">&sdot;script 공통으로 연결된 .js 파일이 담겨있는 폴더</span>
+							</p>
+						</div>
+					</div>
+					<div class="close_btn">Close</div>
+				</div>
+
 				<div class="project_list fade-left">
 					<p class="work">
 						<span class="br">RESPONSIVE WEB</span>
