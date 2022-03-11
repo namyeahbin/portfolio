@@ -160,6 +160,24 @@ Zepto(function($) {
   })
 });
 
+// 스르륵 나오는 퍼블리싱가이드 버튼 
+const openBtn = document.querySelector('.open_btn');
+const projectList = document.querySelector('.project');
+console.log(projectList.offsetTop);
+console.log(innerHeight);
+
+let height = projectList.offsetTop - innerHeight;
+console.log(height);
+
+addEventListener('scroll', () => {
+  if(pageYOffset >= height) {
+    openBtn.classList.add('on');
+  } else if (pageYOffset) {
+    openBtn.classList.remove('on');
+  }
+});
+
+
 // 퍼블리싱가이드 모달창
 const open = () => {
   document.querySelector('.guide_line').classList.remove('hidden');
@@ -173,7 +191,6 @@ document.querySelector('.guide_line').addEventListener('click',close);
 
 // 위로 아이콘
 addEventListener('scroll', () => {
-  // consolg.log('스크롤');
   if(document.querySelector('html').scrollTop > 120 ) {
     document.querySelector('.box').style.display = "block";
   } else {
@@ -185,7 +202,6 @@ document.querySelector('.box').addEventListener('click', (e) => {
   e.preventDefault();
   scrollTo({
     top: 0,
-    // left:0
     behavior:'smooth'
   });
 });
