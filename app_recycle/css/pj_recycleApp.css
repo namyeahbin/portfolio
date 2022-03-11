@@ -24,25 +24,28 @@ html { background-color: #FFF5F0; }
 	.container header #menu .top.nav-up { top: -50px; }
 	/* 햄버거 메뉴 아이콘 */
 	.container header #menu .top .icon_bars { 
-		width: 90px; height: 28px; 
-		position: absolute; left: 30px;
-		cursor: pointer; 
-		transition: opacity 0.25s ease;
-	} 
-	.container header #menu .top .icon_bars .bar { 
-		width: 100%; height: 2px; 
-		background-color: #000; 
-		position: absolute; 
-		transition: all 0.35s ease; 
-		cursor: pointer;
-	}
-	.container header #menu .top .icon_bars .bar:first-child { top: 0; transform-origin: top left; }
-	.container header #menu .top .icon_bars .bar:nth-child(2) { bottom: 0; transform-origin: bottom left; }
-	/* 마우스를 올렸을 때 */
-	.container header #menu .top .icon_bars:hover { opacity: 0.7; }
-	/* 클릭했을 때 */
-	.container header #menu .icon_bars.active .bar:first-child { top: 0; transform: rotate(45deg); background-color: #000; }
-	.container header #menu .icon_bars.active .bar:nth-child(2) { bottom: -35px; transform: rotate(-45deg); background-color: #000; }
+    width: 100px; height: 120px; 
+    position: absolute; left: 30px;
+    cursor: pointer; 
+    transition: opacity 0.25s ease;
+  } 
+  .container header #menu .top .icon_bars .bar { 
+    width: 120%; height: 3px; 
+    background-color: #000; 
+    position: absolute; left: 0;
+    transition: all 0.35s ease; 
+    cursor: pointer;
+  }
+  .container header #menu .top .icon_bars .bar:first-child { top: 0; transform-origin: top left; visibility: hidden; }
+  .container header #menu .top .icon_bars .bar:nth-child(2) { bottom: 0; transform-origin: bottom left; visibility: hidden; }
+  .container header #menu .top .icon_bars .bar:nth-child(3) { top: 50%; }
+  .container header #menu .top .icon_bars .bar:last-child { bottom: 30%; }
+  /* 마우스를 올렸을 때 */
+  .container header #menu .top .icon_bars:hover { opacity: 0.7; }
+  /* 클릭했을 때 */
+  .container header #menu .top .icon_bars.active { width: 100px; }
+  .container header #menu .top .icon_bars.active .bar:nth-child(3) { top: 70px; transform: rotate(45deg); background-color: #000; }
+  .container header #menu .top .icon_bars.active .bar:last-child { bottom: 50px; transform: rotate(-45deg); background-color: #000; }
 	/* 풀스크린 사이드 드로우 메뉴 */
 	.container header .fullscreen { 
 		background-color: #FFF5F0;
@@ -117,11 +120,11 @@ html { background-color: #FFF5F0; }
 	.container main .main_screen .video_wrap video { height: 800px; }
 
 	/* my role */
-	.container main .project .desc { margin-bottom:150px; font-size: 24px; }
-	.container main .project .desc h3 { font-size: 45px; font-family: Kumbh-sans,sans-serif; text-align: left; }
-	.container main .project .desc h4 { font-size: 25px; font-family: Kumbh-sans,sans-serif; }
+	.container main .project .desc { margin-bottom:150px; font-size: 20px; }
+	.container main .project .desc h3 { font-size: 40px; font-family: Kumbh-sans,sans-serif; text-align: left; }
+	.container main .project .desc h4 { font-size: 20px; font-family: Kumbh-sans,sans-serif; }
 	.container main .project .role { display: flex; margin-top: 500px; }
-	.container main .project .role .role_list { margin-top: 25px; }
+	.container main .project .role .role_list { margin-top: 20px; }
 	.container main .project .role .role_list li { text-align: left; line-height: 2; margin-left: 100px;}
 	
 	/* project process */
@@ -249,13 +252,13 @@ html { background-color: #FFF5F0; }
   	20.8px 12.7px 24.1px rgba(0, 0, 0, 0.033),
   	69px 42px 80px rgba(0, 0, 0, 0.05); 
 	}
-	.container main .project .analysis .analysis_box:after { content:""; position: absolute; right: 100px; top: 460px; border: 50px solid transparent; border-top-color: #fff; border-left: 0; border-bottom: 0; }
-	.container main .project .analysis .analysis_box h4 { font-size: 25px; }
+	.container main .project .analysis .analysis_box:after { content:""; position: absolute; right: 100px; top: 390px; border: 50px solid transparent; border-top-color: #fff; border-left: 0; border-bottom: 0; }
+	.container main .project .analysis .analysis_box h4 { font-size: 20px; }
 	.container main .project .analysis .analysis_box li { line-height: 3; }
 	.container main .project .analysis .weak { text-align: right;  }
 	.container main .project .analysis .weak h4 { color: rgb(223, 2, 2); }
 	.container main .project .analysis .need { text-align: left; right: 0; top: 300px; }
-	.container main .project .analysis .need:after { content:""; position: absolute; right: 300px; top: 460px; border: 50px solid transparent; border-top-color: #fff; border-right: 0; border-bottom: 0; }
+	.container main .project .analysis .need:after { content:""; position: absolute; right: 300px; top: 390px; border: 50px solid transparent; border-top-color: #fff; border-right: 0; border-bottom: 0; }
 	.container main .project .analysis .need h4 { color: #2DAF67; }
 
 	/* target research */
@@ -263,7 +266,7 @@ html { background-color: #FFF5F0; }
 	.container main .project .research .research_list ul  { display: flex; justify-content: space-between; flex-wrap: wrap; }
 	.container main .project .research .research_list li { text-align: left; box-sizing: border-box; width: 50%; margin: 0 auto; }
 	.container main .project .research .research_list li:nth-child(odd) { text-align: right; padding-right: 70px; }
-	.container main .project .research .reference { font-size: 14px; text-align: right; }
+	.container main .project .research .reference { font-size: 13px; text-align: right; }
 	.container main .project .research .target_result h4 { padding-top: 80px; font-size: 37px; }
 	.container main .project .research .target_result .result { display: inline-block; width: 80px; height: 80px; border: 3px solid #2DAF67; border-radius: 50%; padding: 100px; font-size: 30px; margin-right: 10px; }
 
@@ -332,31 +335,31 @@ html { background-color: #FFF5F0; }
 	}
 	.container main .project .contents.flow .programme .pro_box1 {
 		left: 14.5vw;
-		top: -7.3vw
+		top: -6.2vw
 	}
 	.container main .project .contents.flow .programme .pro_box2 {
 		left: 43vw;
-		top: -7.3vw;
+		top: -6.2vw;
 	}
 	.container main .project .contents.flow .programme .pro_box3 {
 		left: 49vw;
-		top: 18.9vw;
+		top: 20vw;
 	}
 	.container main .project .contents.flow .programme .pro_box4 {
 		left: 35vw;
-		top: 18.9vw;
+		top: 20vw;
 	}
 	.container main .project .contents.flow .programme .pro_box5 {
 		left: 20vw;
-		top: 18.9vw;
+		top: 20vw;
 	}
 	.container main .project .contents.flow .programme .pro_box6 {
 		left: 25vw;
-		top: 45vw;
+		top: 46.3vw;
 	}
 	.container main .project .contents.flow .programme .pro_box7 {
 		left: 50vw;
-		top: 45vw;
+		top: 46.3vw;
 	}
 
 	/* ux vision */
@@ -368,7 +371,7 @@ html { background-color: #FFF5F0; }
 	.container main .project .design { margin-bottom: 800px; }
 	.container main .project .design .style { float: left; text-align: left; width: 50%; }
 	.container main .project .design .style h4 { margin-bottom: 5px; font-size: 30px; }
-	.container main .project .design .style li { line-height: 1.5; font-size: 35px; }
+	.container main .project .design .style li { line-height: 1.5; font-size: 30px; }
 	.container main .project .design .left .icon { background: url(../images/luncherIcon.png) no-repeat 50% / cover; width: 200px; height: 200px; text-indent: -9999px; }
 	.container main .project .design .right .color { display: flex; justify-content: space-between; margin: 30px 0 100px; }
 	.container main .project .design .right .color li { width: 90px; height: 90px; border-radius: 50%; text-indent: -9999px;  }
@@ -380,18 +383,20 @@ html { background-color: #FFF5F0; }
 	.container main .project .design .right .font li:nth-child(2) { font-family: 'Noto Sans KR',sans-serif; font-weight: 500; }
 
 	/* review */
-	.container main .review .review_txt { font-size: 30px; line-height: 1.5; text-align: left;  }
+	.container main .review .review_txt { font-size: 28px; line-height: 1.5; text-align: left;  }
 
 	/* prototype */
 	.container main .prototype .prototype_box { display: flex; position: relative; margin-bottom: 200px; }
-	.container main .prototype .prototype_box .photo { background: no-repeat 50% / contain; text-indent: -9999px; width: 400px; height: 800px;  }		
+	.container main .prototype .prototype_box h4 { font-size: 25px; }
+	.container main .prototype .prototype_box p { font-size: 20px; line-height: 1.3; }
+	.container main .prototype .prototype_box .photo { background: no-repeat 50% / contain; text-indent: -9999px; width: 300px; height: 600px;  }		
 	.container main .prototype .prototype_box .photo1 { background-image: url(../images/prototype01.png); }
 	.container main .prototype .prototype_box .photo2 { background-image: url(../images/prototype02.png); }
 	.container main .prototype .prototype_box .photo3 { background-image: url(../images/prototype03.png); }
 	.container main .prototype .prototype_box .photo4 { background-image: url(../images/prototype04.png); }
 	.container main .prototype .prototype_box .photo5 { background-image: url(../images/prototype05.png); }
 	.container main .prototype .prototype_box .photo6 { background-image: url(../images/prototype07.png); }
-	.container main .prototype .prototype_box .prototype_desc { position: absolute; border-top: 5px solid #000; top: 30px; right: 0; text-align: left; width: 390px; }
+	.container main .prototype .prototype_box .prototype_desc { position: absolute; border-top: 5px solid #000; top: 30px; right: 0; text-align: left; width: 600px; }
 
 	/* site btn */
 	.container main .site_btn { font-size: 45px; display: flex; justify-content: center; margin-bottom: 100px; position: relative; }
