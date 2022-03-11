@@ -41,7 +41,6 @@
 	
 	<!-- 내가 작성한 js -->
 	<script defer src="../common/script/script.js"></script>
-	<script defer src="../common/script/guide.js"></script>
 </head>
 
 <body style="overflow-x: hidden; overflow-y: auto;">
@@ -54,8 +53,12 @@
 			<nav id="menu">
 				<ul class="top">
 					<li class="icon_bars icon_btn">
-						<div class="bar"></div>
-						<div class="bar"></div>
+						<ul>
+							<li class="bar"></li>
+							<li class="bar"></li>
+							<li class="bar"></li>
+							<li class="bar"></li>
+						</ul>
 					</li>
 					<li class="logo" onclick="location.href='../index.html'"><a href="#">logo</a><li>
 					<li class="contact">
@@ -90,83 +93,6 @@
 					<span class="br change">ADAPTIVE WEBSITE</span>
 					<span class="import">BLUE ORANGE</span>
 				</h3>
-
-				<div class="publishing_guide">Publishing Guide</div>
-			</div>
-
-			<!-- 퍼블리싱 가이드 -->
-			<div class="guide_line">
-				<div class="guide list1">
-					<h4>Open Graph |</h4>
-					<div class="open_graph name">
-						<p>
-							<span class="br">오픈그래피 적용</span>
-							meta property="og" 적용
-						</p>
-					</div>
-				</div>
-
-				<div class="guide list2">
-					<h4>Favicon |</h4>
-					<div class="favicon name">
-						<p>
-							<span class="br">5개의 이미지와 1개의 JSON 파일로 파비콘 최적화</span>
-							<span class="br">32x32 예전 브라우저</span>
-							<span class="br">svg 최신 브라우저 / 다크모드 지원</span>
-							<span class="br">apple-touch-icon 180x180 애플기기</span>
-							<span class="br">192x192 홈스크린</span>
-							<span class="br">manifest(JSON) PWA 및 안드로이드 기기</span>
-							<span class="br">512x512 PWA 로딩시 스플래시 스크린용</span>
-						</p>
-					</div>
-				</div>
-
-				<div class="guide list3">
-					<h4>HTML5 |</h4>
-					<div class="html name">
-						<p>
-							<span class="br">W3C기준</span>
-							<span class="br">meta[name:viewport]설정</span>
-							<span class="br">header / main / footer를 이용하여 영역 분리</span>
-							<span class="br">img태그 사용시 alt값 필수 작성</span>
-							<span class="br">a태그 사용시 빈 링크는 &num;으로 통일</span>
-						</p>
-					</div>
-				</div>
-
-				<div class="guide list4">
-					<h4>CSS3 |</h4>
-					<div class="css name">
-						<p>
-							<span class="br">첫줄에 인코딩 선언 @charset "UTF-8";</span>
-							<span class="br">주석을 이용하여 영역별 css 구분</span>
-							<span class="br">모든 속성 선언 끝에 세미콜론; 작성</span>
-						</p>
-					</div>
-				</div>
-
-				<div class="guide list5">
-					<h4>파일명 |</h4>
-					<div class="file name">
-						<p>
-							<span class="br">웹페이지는 첫 페이지는 index.html로 통일</span>
-							<span class="br">알파벳, 숫자, 언더바_ 조합하여 파일명 설정</span>
-							<span class="br"></span>
-						</p>
-					</div>
-				</div>
-
-				<div class="guide list6">
-					<h4>폴더 구조 |</h4>
-					<div class="folder name">
-						<p>
-							<span class="br">css 공통으로 연결된 font.css와 menu.css 담겨있는 폴더</span>
-							<span class="br">fonts 웹폰트를 제외한 폰트 파일이 담겨있는 폴더</span>
-							<span class="br">images 공통으로 연결된 이미지가 담겨있는 폴더</span>
-							<span class="br">script 공통으로 연결된 .js 파일이 담겨있는 폴더</span>
-						</p>
-					</div>
-				</div>
 			</div>
 
 			<div class="pj_desc">
@@ -188,7 +114,7 @@
 								PC 1280px
 							</p>
 							<p>
-								&num;시맨틱마크업 &num;웹표준<span class="br">&num;Adaptive Web &num;jQuery #Parallax js</span>&num;Swiper js &num;Flexible Box</span>
+								&num;시맨틱마크업 &num;웹표준<span class="br">&num;Adaptive Web &num;jQuery #parallax_js</span>&num;swiper_js &num;Flexible Box</span>
 							</p>
 						</div>
 					</div>
@@ -200,15 +126,26 @@
 						<div class="txt txt1">
 							<h4>Scroll Event 적용</h4>
 							<div>
-								<p><span class="br">jQuery를 이용해 스크롤 할 때 nav의 배경색이 자연스럽게</span>변하는 효과 적용</p>
-								<p>스크롤 다운했을 때 .active클래스를 포함하고 스타일을 지정해 준 후 addClass와 removeClass해줌</p>
+								<p>
+									<span class="br">jQuery를 이용해 스크롤 할 때 nav의 배경색이 자연스럽게</span>변하는 효과 적용
+								</p>
+								<p>
+									스크롤 다운했을 때 .active클래스를 포함하고 스타일을 지정해 준 후 addClass와 removeClass해줌
+								</p>
 							</div>
 						</div>
-						<!-- <div class="txt txt2">
-							<h4>인스타그램 API</h4>
+						<div class="txt txt2">
+							<h4>parallax 스크롤 적용</h4>
 							<div>
+								<P>
+									<span class="br">parallax_js 동적 구현의 미숙함</span>
+								</P>
+								<p>
+									<span class="br">parallax.js 사용시 고정된 크기가 없으면 구현이 되지 않는다는 것을 숙지하지 못해 작동이 되지 않음</span>
+									<span class="br">height값을 주고 background-image를 fixed해 문제 해결</span>
+								</p>
 							</div>
-						</div> -->
+						</div>
 					</div>
 				</div>
 
@@ -225,7 +162,7 @@
 						</div>
 						<div class="txt txt2">
 							<h4>Colors</h4>	
-							<span class="color box1">#FFFFF</span><span class="color box2">#E4E4E4</span><span class="color box3">#007AFF</span>	
+							<span class="color box1">&num;FFFFF</span><span class="color box2">&num;E4E4E4</span><span class="color box3">&num;007AFF</span>	
 						</div>
 						<div class="txt txt3">
 							<h4>Fonts</h4>
