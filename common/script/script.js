@@ -160,8 +160,16 @@ Zepto(function($) {
   })
 });
 
-// 퍼블리싱가이드 탭메뉴
-
+// 퍼블리싱가이드 모달창
+const open = () => {
+  document.querySelector('.guide_line').classList.remove('hidden');
+};
+const close = () => {
+  document.querySelector('.guide_line').classList.add('hidden');
+};
+document.querySelector('.open_btn').addEventListener('click', open);
+document.querySelector('.close_btn').addEventListener('click', close);
+document.querySelector('.guide_line').addEventListener('click',close);
 
 // 위로 아이콘
 addEventListener('scroll', () => {
