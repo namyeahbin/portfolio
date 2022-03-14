@@ -67,6 +67,7 @@
 
   /*** 소개 ***/
   .container main .aboutme { text-align: left; width: 1300px; margin: 650px auto 500px; }
+  .container main .aboutme.hideme { opacity: 0; margin-bottom: 0; }
   .container main .aboutme .typing-txt { position: relative; }
   .container main .aboutme .txt-wrapper { 
     display: inline-block; position: relative; padding-top: 0.2em;
@@ -81,6 +82,7 @@
 
   /*** skill ***/
   .container main .skill { position: relative; }
+  .container main .skill.hideme { opacity: 0; margin-bottom: 0; }
   .container main .skill .swiper { border-top: 1px solid #FFF5F0;
     border-bottom: 1px solid #FFF5F0; display: flex; width: 77%; margin: 0 auto; padding: 30px 0;  }
   .container main .skill .swiper .swiper-wrapper .swiper-slide { display: flex; flex-direction: column; justify-content: center; align-items: center;  }
@@ -107,23 +109,8 @@
   /*** work ***/
   .container main .project { margin: 500px 0; position: relative; }
   /* 퍼블리싱 가이드 */
-	.container main .project .open_btn { position: absolute; top: -40px; right: -800px; font-size: 35px; cursor: pointer; z-index: 999; width: 400px; height: 80px; background-color: #FFF5F0; color: #000; text-align: center; line-height: 80px; }
-  .container main .project .open_btn.on { right: -200px; transition: 0.5s all ease-in-out; }
-  .container main .project .open_btn .arrow_right {
-    position: absolute;
-    width: 0; height: 0;
-    border-top: 15px solid #FFF5F0;
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid transparent;
-    margin-top: 8px; margin-left: 9px;
-    animation: horizontal 0.7s ease-in-out infinite;
-  }
-  @keyframes horizontal {
-    0% { margin-top: 15px; }
-    50% { margin-top: 11px; }
-    100% { margin-top: 15px; }
-  }
+	.container main .project .open_btn { position: absolute; top: -40px; right: -800px; font-size: 35px; cursor: pointer; width: 400px; height: 80px; background-color: #FFF5F0; color: #000; text-align: center; line-height: 80px; }
+  .container main .project .open_btn.on { right: 0; transition: 0.5s all ease-in-out; }
   .container main .project .guide_line { position: fixed; top: 0; width: 80%; height: 100%; margin: 0 200px; background-color: #FFF5F0; color: #000; z-index: 9999; overflow: auto; cursor: pointer; }
   .container main .project .guide_line.hidden { display: none; }
   .container main .project .guide_line .guide { display: flex; text-align: left; padding: 20px 100px; }
