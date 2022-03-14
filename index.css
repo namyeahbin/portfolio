@@ -1,6 +1,6 @@
 @charset "utf-8";
+
 /*===== pc =====*/
-@media screen and (min-width:1280px) {
   /* 로고 */
   .container header .top .logo { 
     background: url(common/images/logo.png) no-repeat 50% / cover; width: 50px; height: 50px; text-indent: -9999px; cursor: pointer;
@@ -180,4 +180,3 @@
     transform: rotate(315deg);
     border-radius: 3px 3px 3px 3px;
   }
-}
