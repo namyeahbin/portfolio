@@ -107,7 +107,7 @@
   /*** work ***/
   .container main .project { margin: 500px 0; position: relative; }
   /* 퍼블리싱 가이드 */
-	.container main .project .open_btn { position: fixed; top: 800px; right: -800px; font-size: 35px; cursor: pointer; z-index: 999; width: 400px; height: 80px; background-color: #FFF5F0; color: #000; text-align: center; line-height: 80px; }
+	.container main .project .open_btn { position: absolute; top: -40px; right: -800px; font-size: 35px; cursor: pointer; z-index: 999; width: 400px; height: 80px; background-color: #FFF5F0; color: #000; text-align: center; line-height: 80px; }
   .container main .project .open_btn.on { right: -200px; transition: 0.7s all ease-in-out; }
   .container main .project .open_btn .arrow_right {
     position: absolute;
