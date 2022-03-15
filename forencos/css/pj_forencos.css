@@ -1,6 +1,14 @@
 @charset "utf-8";
+/*===== mobile + tablet =====*/
+html { background-color: #FFF5F0; }
+.inform img { display: block; width: 300px; margin: 0 auto; }
+.container { display: none; }
+
 /*===== pc =====*/
 @media screen and (min-width:1280px) {
+	html { background-color: #000; }
+	.container { display: block; }
+	.inform { display: none; }
 	/* 로고 */
   .container header .top .logo { 
     background: url(../../common/images/logo.png) no-repeat 50% / cover; width: 50px; height: 50px; text-indent: -9999px; cursor: pointer;
